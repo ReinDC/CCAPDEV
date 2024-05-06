@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/createreview.css">
+
+<body>
+    {{> navbar}}
+
+    <div class="review-box">
+        <h1>Write a Review</h1>
+        
+        <form id="review-form" method="post">
+            <label for="title">Title:</label>
+            <input type="text" id="title" name="title" required>
+            <label for="rating">Rating:</label>
+                <div id="rating">
+                    <div>
+                        <label for="rating5">5⭐</label>
+                        <input type="radio" name="rating_radio" id="rating5" value="5">
+                    </div>
+                    <div>
+                        <label for="rating4">4⭐</label>
+                        <input type="radio" name="rating_radio" id="rating4" value="4">
+                    </div>
+                    <div>
+                        <label for="rating3">3⭐</label>
+                        <input type="radio" name="rating_radio" id="rating3" value="3">
+                    </div>
+                    <div>
+                        <label for="rating2">2⭐</label>
+                        <input type="radio" name="rating_radio" id="rating2" value="2">
+                    </div>
+                    <div>
+                        <label for="rating1">1⭐</label>
+                    <input type="radio" name="rating_radio" id="rating1" value="1">
+                    </div>
+                    <div>
+                        <label for="rating0">0⭐</label>
+                    <input type="radio" name="rating_radio" id="rating0" value="0">
+                    </div>
+                </div>
+            
+            <textarea id="review" name="review" rows="20" cols="85" placeholder="Please remember to be courteous and conscientious in your language">
+            </textarea>
+
+            <br><br>
+
+            <div id="button-group">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+
+            <div id="error"></div>
+        </form>
+    </div>
+</body>

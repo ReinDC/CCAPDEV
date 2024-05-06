@@ -1,0 +1,19 @@
+<link rel="stylesheet" href="/css/login.css">
+
+    {{> navbar }}
+
+<div class="login-box">
+	<h1>Login</h1>
+	<form id="loginform" method="post">
+		<label for="username">Username:</label>
+		<input type="text" id="username" name="username">
+		<label for="password">Password:</label>
+		<input type="password" id="password" name="password">
+		<div class="button-group">
+			<button type="submit" class="but">Login</button>
+			<button type="button" id="registerBtn" class="but">Register</button>
+		</div>
+	</form>
+</div>
+
+<script src="/js/login.js"></script>

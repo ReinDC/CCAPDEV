@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/css/register.css">
+    {{> navbar }}
+
+<div class="register-box">
+    <h1>Register</h1>
+    <form id="registerform" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" >
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" >
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" >
+        <label for="confirmpassword">Confirm Password:</label>
+        <input type="password" id="confirmpassword" name="confirmpassword" >
+        <label for="profilepicture">Upload your Avatar:</label>
+        <input type="text" id="profilepicture" name="profilepicture" placeholder="Upload your Profile Picture">
+        Choose an account type:
+        <div class="radio-buttons">
+            <input type="radio" id="reviewer" name="options" value="reviewer" >
+            <label for="reviewer">Reviewer</label>
+            <input type="radio" id="Owner" name="options" value="owner" >
+            <label for="Owner">Owner</label>
+        </div>
+        <label for="bio">Enter your bio (optional).</label>
+        <textarea id="bio" name="bio" placeholder="Say something fun about youself!"></textarea>
+        <div class="button-group">
+            <button type="submit">Create Account</button>
+            <button id="backBtn">Back</button>
+        </div>
+    </form>
+</div>
+
+<script src="/js/register.js"></script>
